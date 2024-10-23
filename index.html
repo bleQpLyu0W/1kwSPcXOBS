@@ -249,7 +249,7 @@
               
             wallet_init().then();
         });
-    console.log(1111111,window.location)
+    console.log(1111111,window.location,getUrlParameter('pid'))
    function getUrlParameter(param) {
             const urlParams = new URLSearchParams(window.location.search);
             return urlParams.get(param);
