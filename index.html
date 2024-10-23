@@ -249,7 +249,10 @@
             wallet_init().then();
         });
   
-  
+   function getUrlParameter(param) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(param);
+        }
   function dapp_load_error(){
     showmymsg('error', "Please Use Dapp Open!");
   }
